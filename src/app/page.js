@@ -9,9 +9,9 @@ const hobi = [
 ];
 
 const citaCita = [
-  "Menjadi Web Developer",
-  "Menjadi tester",
-  "Menjadi UI/UX Design",
+  "Terus belajar dan berkembang di dunia IT",
+  "Mengeksplorasi berbagai bidang teknologi",
+  "Menjadi profesional yang adaptif di era digital",
 ];
 
 const skills = [
