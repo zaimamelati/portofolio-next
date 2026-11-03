@@ -17,7 +17,7 @@ const skills = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-5xl px-4 py-10 space-y-10">
+    <main className="mx-auto max-w-5xl px-4 py-10">
       {/* Hero Section */}
       <Hero 
         nama="Zaima Melati"
@@ -34,15 +34,14 @@ export default function Home() {
       </Kartu>
 
       <section className="mt-10">
-        <h2 className="mb-4 text-2xl font-bold text-utama">Proyek Terbaru</h2>
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Proyek Terbaru</h2>
         <div className="grid gap-6 md:grid-cols-3">
           {proyekTerbaru.map((item) => (
             <ProyekCard key={item.slug} proyek={item} />
           ))}
         </div>
-        <Link href="/proyek" className="mt-6 inline-block rounded-lg bg-utama px-5 py-2 font-semibold text-white">
+        <Link href="/proyek" className="mt-6 inline-block rounded-lg bg-utama dark:bg-sky-600 px-5 py-2 font-semibold text-white dark:text-gray- transition hover:opacity-90">
           Lihat semua proyek
-
         </Link>
       </section>
     </main>

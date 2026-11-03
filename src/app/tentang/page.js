@@ -31,11 +31,11 @@ const citaCita = [
 export default function Tentang () {
     return (
         <main className="mx-auto max-w-5xl px-4 py-10 space-y-8">
-            <h1 className="text-3xl font-bold text-utama md:text-4xl">Tentang Saya</h1>
+            <h1 className="text-3xl font-bold text-utama dark:text-sky-200 md:text-4xl">Tentang Saya</h1>
 
             {/* Perkenalan */}
             <Kartu judul="Perkenalan">
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                     Saya seorang siswi SMK yang memiliki ketertarikan pada dunia teknologi 
                     dan selalu berusaha untuk terus berkembang.
                 </p>
@@ -44,7 +44,7 @@ export default function Tentang () {
             {/* Hobi dan Cita-Cita */}
             <div className="grid gap-6 md:grid-cols-2">
                 <Kartu judul="Hobi">
-                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                         {hobi.map((item)=> (
                             <li key={item}>{item}</li>
                         ))}
@@ -52,7 +52,7 @@ export default function Tentang () {
                 </Kartu> 
 
                 <Kartu judul="Cita-Cita">
-                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                         {citaCita.map((item) => (
                             <li key={item}>{item}</li>
                         ))}
@@ -71,7 +71,7 @@ export default function Tentang () {
                                     <th className="p-3">Kegiatan</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-gray-200 text-gray-700">
+                            <tbody className="divide-y divide-gray-200 text-gray-700 dark:text-gray-300">
                                 {jadwalBelajar.map ((jadwal) => (
                                     <tr key={jadwal.hari}>
                                         <td className="p-3">{jadwal.hari}</td>

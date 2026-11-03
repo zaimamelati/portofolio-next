@@ -27,8 +27,8 @@ export const proyek = [
     },
     {
         slug: "tabel-jadwal",
-        judul: "JavaScript",
-        kategori: "HTML",
+        judul: "Jadwal Belajar",
+        kategori: "JavaScript",
         minggu: "Minggu 02",
         gambar: "/proyek/proyek-jadwal.png",
         deskripsi: "Jadwal belajar mingguan dengan thead dan tbody.",
@@ -41,7 +41,7 @@ export const proyek = [
     {
         slug: "my-app",
         judul: "My App",
-        kategori: "Next,js",
+        kategori: "Next.js",
         minggu: "Minggu 04",
         gambar: "/proyek/my-app.png",
         deskripsi: "Aplikasi web modular yang menampilkan dashboard statistik, navigasi menu, dan galeri media responsif.",
@@ -54,7 +54,7 @@ export const proyek = [
     {
         slug: "portal-berita",
         judul: "Portal Berita",
-        kategori: "HTML & Tailwind CSS",
+        kategori: "HTML",
         minggu: "Minggu 06",
         gambar: "/proyek/proyek-berita.png",
         deskripsi: "Website portal berita responsif yang menampilkan berita utama, menu kategori dan daftar berita populer.",
