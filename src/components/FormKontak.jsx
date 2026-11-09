@@ -40,7 +40,7 @@ export default function FormKontak() {
     return (
         <form onSubmit={kirim} noValidate className="space-y-4">
             <div>
-                <label htmlFor="nama" className="block font-semibold dark:text-gray-400">
+                <label htmlFor="nama" className="block font-semibold dark:text-gray-200">
                     Nama lengkap
                 </label>
                 <input 
@@ -126,7 +126,7 @@ export default function FormKontak() {
             </button>
             {berhasil && (
                 <p className="rounded-lg bg-green-50 dark:bg-green-700 p-3 text-green-800 dark:text-green-200">
-                    Terima kasih! Pesanmu telah lolos pemeriksaan.
+                    Terima kasih, {nama}! Pesanmu telah lolos pemeriksaan [cite: 48, 54, 74, 75].
                 </p>
             )}
 

@@ -60,7 +60,7 @@ export const proyek = [
         deskripsi: "Website portal berita responsif yang menampilkan berita utama, menu kategori dan daftar berita populer.",
         fitur: [
             "Membuat tata letak grid berita utama dan sidebar berita populer",
-            "Menyusun menu navigasi kategori berita dan kkolom pencarian",
+            "Menyusun menu navigasi kategori berita dan kolom pencarian",
             "Menyusun desain responsif menggunakan Tailwind CSS",
         ],
     },
