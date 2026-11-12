@@ -1,4 +1,5 @@
 import FormKontak from "@/components/FormKontak";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
     title: "Kontak",
@@ -16,32 +17,31 @@ export default function Kontak() {
             </div>
 
             <div className="mt-8 grid gap-6 md:grid-cols-3  ">
-                <section className="rounded-xl border border-border bg-card p-6 shadow-sm md:col-span-2">
-                    <FormKontak />
-                </section>
+                <Card className="md:col-span-2">
+                    <CardContent>
+                        <FormKontak />
+                    </CardContent>
+                </Card>
                 
-
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-fit space-y-4">
-                    <h2 className="text-xl font-bold text-primary">Temukan Saya di</h2>
-                    <div>
-                        <a
-                            href="https://github.com/zaimamelati"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm text-aksen hover:underline"
-                        >
-                            GitHub
-                        </a>
-                    </div>
-                    <div>
-                        <a
-                            href="mailto:zaimamelati@gmail.com"
-                            className="text-sm text-aksen hover:underline"
-                        >
-                            zaimamelati@gmail.com
-                        </a>
-                    </div>
-                </div>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="text-2xl font-bold text-primary">Temukan Saya di</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="space-y-2">
+                            <li>
+                                <a href="https://github.com/zaimamelati" target="_blank" className="text-aksen hover:underline">
+                                    Github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:zaimamelati@gmail.com" className="text-aksen hover:underline">
+                                    zaimamelati@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </CardContent>
+                </Card>
             </div>
         </main>
     );
