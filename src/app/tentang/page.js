@@ -33,15 +33,13 @@ export default function Tentang () {
         <main className="mx-auto max-w-5xl px-4 py-10 space-y-8">
             <h1 className="text-3xl font-bold text-primary md:text-4xl">Tentang Saya</h1>
 
-            {/* Perkenalan */}
             <Kartu judul="Perkenalan">
                 <p className="text-muted-foreground">
-                    Saya seorang siswi SMK yang memiliki ketertarikan pada dunia teknologi 
+                    Saya adalah seorang siswi SMK yang memiliki ketertarikan pada dunia teknologi 
                     dan selalu berusaha untuk terus berkembang.
                 </p>
             </Kartu>
 
-            {/* Hobi dan Cita-Cita */}
             <div className="grid gap-6 md:grid-cols-2">
                 <Kartu judul="Hobi">
                     <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
@@ -60,7 +58,6 @@ export default function Tentang () {
                 </Kartu>
             </div>
 
-                {/* Jadwal belajar */}
                 <Kartu judul="Jadwal Belajar">
                     <div className="overflow-x-auto">
                         <table className="w-full text-left border-collapse">
