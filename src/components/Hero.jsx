@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function Hero ({ nama, tagline }) {
     return (
-        <section className="flex flex-col items-center gap-6 text-center md:flex-row md:text-left">
+        <section className="flex flex-col items-center gap-6 text-center md:flex-row md:text-left mb-6">
             <Image
                 src="/foto.jpeg"
                 alt={`Foto profil ${nama}`}
-                width={180}
-                height={180}
+                width={150}
+                height={150}
                 loading="eager"
-                className="h-[180px] w-[180px] rounded-full border-4 border-aksen object-cover"
+                className="h-[150px] w-[150px] rounded-full border-4 border-aksen object-cover"
             />
             <div>
-                <h1 className="text-3xl font-bold text-utama dark:text-sky-200 md:text-5xl">
+                <h1 className="text-3xl font-bold text-primary md:text-5xl">
                     Halo, saya {nama}!
                 </h1>
-                <p className="mt-3 text-lg text-gray-700 dark:text-gray-300">{tagline}</p>
+                <p className="mt-3 text-lg text-muted-foreground">{tagline}</p>
             </div>
         </section>
     );

@@ -2,7 +2,7 @@
 
 import {useState} from "react";
 
-const kelasInput = "mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-2";
+const kelasInput = "mt-1 w-full rounded-lg border border-input bg-card p-2";
 
 export default function FormKontak() {
     const [nama, setNama] = useState("");
@@ -52,7 +52,7 @@ export default function FormKontak() {
                     placeholder="Contoh: Azalea Queenza"
                     className={kelasInput}
                 />
-                {error.nama && <p className="mt-1 text-sm text-aksen dark:text-red-400">{error.nama}</p>}
+                {error.nama && <p className="mt-1 text-sm text-aksen">{error.nama}</p>}
             </div>
             <div>
                 <label htmlFor="email" className="block font-semibold dark:text-gray-200">
@@ -67,7 +67,7 @@ export default function FormKontak() {
                     placeholder="nama@gmail.com"
                     className={kelasInput}
                 />
-                {error.email && <p className="mt-1 text-sm text-aksen dark:text-red-400">{error.email}</p>}
+                {error.email && <p className="mt-1 text-sm text-aksen">{error.email}</p>}
             </div>
             <div>
                 <label htmlFor="hp" className="block font-semibold dark:text-gray-200">
@@ -82,7 +82,7 @@ export default function FormKontak() {
                     placeholder="081234567890"
                     className={kelasInput}
                 />
-                {error.hp && <p className="mt-1 text-sm text-aksen dark:text-red-400">{error.hp}</p>}
+                {error.hp && <p className="mt-1 text-sm text-aksen">{error.hp}</p>}
             </div>
             <div>
                 <label htmlFor="Keperluan" className="block font-semibold dark:text-gray-200">
@@ -100,7 +100,7 @@ export default function FormKontak() {
                     <option value="pertanyaan">Pertanyaan</option>
                     <option value="lainnya">Lainnya</option>
                 </select>
-                {error.keperluan && <p className="mt-1 text-sm text-aksen dark:text-red-400">{error.keperluan}</p>}
+                {error.keperluan && <p className="mt-1 text-sm text-aksen">{error.keperluan}</p>}
             </div>
             <div>
                 <label htmlFor="pesan" className="block font-semibold">
@@ -115,7 +115,7 @@ export default function FormKontak() {
                     placeholder="Tulis pesan mu di sini"
                     className={kelasInput}
                 ></textarea>
-                {error.pesan && <p className="mt-1 text-sm text-aksen dark:text-red-400">{error.pesan}</p>}
+                {error.pesan && <p className="mt-1 text-sm text-aksen">{error.pesan}</p>}
             </div>
 
             <button 
@@ -130,7 +130,7 @@ export default function FormKontak() {
                 </p>
             )}
 
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="text-sm text-mutedt-foreground">
                 Form ini belum mengirim pesan. Pengiriman pesan diaktifkan di Minggu 15.
             </p>
         </form>

@@ -2,9 +2,10 @@
 
 import { useState} from "react";
 import ProyekCard from "./ProyekCard";
+import { Button } from "@/components/ui/button";
 
 const daftarKategori = ["Semua", "HTML", "CSS", "JavaScript", "Next.js"];
-const tombolBiasa = "rounded-full border border-utama px-4 py-1 text-sm font-semibold dark:text-gray-200 text-utama dark:text-sky-200";
+const tombolBiasa = "rounded-full border border-primary px-4 py-1 text-sm font-semibold dark:text-gray-200 text-primary";
 const tombolAktif = "rounded-full border border-aksen bg-aksen px-4 py-1 text-sm font-semibold text-white dark:text-gray-400";
 
 export default function FilterProyek ({ proyek }) {
@@ -22,14 +23,14 @@ export default function FilterProyek ({ proyek }) {
         <div className="mt-8">
             <div className="flex flex-wrap gap-2">
                 {daftarKategori.map((k) => (
-                    <button key={k} type="button" onClick={() => setKategori(k)} className={kategori === k ? tombolAktif : tombolBiasa}>
+                    <Button key={k} variant={kategori === k ? "default" : "outline"} onClick={ () => setKategori(k) }>
                         {k}
-                    </button>
+                    </Button>
                 ))}
             </div>
 
             <div className="mt-6">
-                <label htmlFor="cari" className="block font-semibold dark:text-gray-200">
+                <label htmlFor="cari" className="block font-semibold">
                     Cari proyek
                 </label>
                 <input 
@@ -38,19 +39,18 @@ export default function FilterProyek ({ proyek }) {
                     value={kata}
                     onChange={(e) => setKata(e.target.value)}
                     placeholder="Contoh: Kalkulator"
-                    className="mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-2 md:w-80"
+                    className="mt-1 w-full rounded-lg border border-input bg-card p-2 md:w-80"
                 />
                 {kata && (
-                    <button 
-                        type="button"
-                        onClick={() => setKata("")}
-                        className="ml-3 text-sm text-aksen dark:text-red-400 hover:underline"
-                    >
+                    <Button variant="link" onClick={ () =>setKata("")} className="mt-2 px-0 text-aksen">
                         Hapus pencarian
-                    </button>
+                    </Button>
                 )}
             </div>
 
+            <p className="mt-4 text-sm text-muted-foreground">
+                Menampilkan {hasil.length} dari {proyek.length} proyek
+            </p>
             <div className="mt-8 grid gap-6 md:grid-cols-3">
                 {hasil.map((item) => (
                     <ProyekCard key={item.slug} proyek={item} />
