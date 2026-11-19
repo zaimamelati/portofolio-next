@@ -131,7 +131,7 @@ export default function FormKontak() {
             )}
 
             <p className="text-sm text-mutedt-foreground">
-                Form ini belum mengirim pesan. Pengiriman pesan diaktifkan di Minggu 15.
+                Form ini belum mengirim pesan. Untuk menyapa saya, tulis pesan di halaman buku tamu.
             </p>
         </form>
     )
