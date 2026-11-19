@@ -1,6 +1,6 @@
 import { notFound, redirect } from "next/navigation";
 import FormProyek from "@/components/FormProyek";
-import { Card, CardContent } from "@?components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { sudahMasuk } from "@/lib/pin";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { ubahProyek } from "../../actions";
